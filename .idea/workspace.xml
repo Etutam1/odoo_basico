@@ -4,19 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c728579-20e9-42bc-8859-9937c175a321" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/models/lineapedido.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/pedido.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/importarImaxes/foto1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/importarImaxes/foto2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/importarImaxes/foto3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/importarImaxes/foto4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/importarImaxes/scriptFotos.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/pedido.xml" afterDir="false" />
+    <list default="true" id="9c728579-20e9-42bc-8859-9937c175a321" name="Changes" comment="update 23/1">
+      <change afterPath="$PROJECT_DIR$/views/lineapedido.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/informacion.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/informacion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/informacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/informacion.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/templates.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/lineapedido.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/lineapedido.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/pedido.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/pedido.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/security/ir.model.access.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/menu.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +60,19 @@
       <option name="presentableId" value="Default" />
       <updated>1699967467209</updated>
     </task>
+    <task id="LOCAL-00001" summary="update 23/1">
+      <option name="closed" value="true" />
+      <created>1706015576039</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706015576039</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update 23/1" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 23/1" />
   </component>
 </project>

@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="lineapedido_list_action">
+            <field name="name">A acción de lineapedido</field>
+            <field name="res_model">odoo_basico.lineapedido</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">Tes que crear o primeiro rexistro</p>
+            </field>
+        </record>
+
+        <!-- explicit list view definition -->
+        <record model="ir.ui.view" id="lineapedido_form_view">
+            <field name="name">lineapedido.form</field>
+            <field name="model">odoo_basico.lineapedido</field>
+            <field name="arch" type="xml">
+                <form string="Formulario de Información">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="lineapedido_tree_view">
+            <field name="name">lineapedido.tree</field>
+            <field name="model">odoo_basico.lineapedido</field>
+            <field name="arch" type="xml">
+                <tree string="lineapedido tree">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
