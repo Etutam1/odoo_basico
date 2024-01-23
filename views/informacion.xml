@@ -45,10 +45,22 @@
                                 </group>
                             </page>
                             <page string="Binary">
-                                <group></group>
+                                <group>
+                                    <field name="foto" widget="image"/>
+                                    <field name="adxunto_nome" invisible="1"/>
+                                    <field name="adxunto" filename="adxunto_nome"/>
+                                </group>
                             </page>
                             <page string="Moedas">
-                                <group></group>
+                                <group>
+                                    <field name="moeda_id"/>
+                                    <field name="moeda_en_texto"/>
+                                    <field name="creador_da_moeda"/>
+                                </group>
+                                <group>
+                                    <field name="moeda_euro_id" invisible="1"/>
+                                    <field name="gasto_en_euros"/>
+                                </group>
                             </page>
                             <page string="Data e Hora">
                                 <group></group>
@@ -75,6 +87,7 @@
                     <field name="densidade"/>
                     <field name="autorizado"/>
                     <field name="sexo_traducido"/>
+                    <field name="moeda_id"/>
                 </tree>
             </field>
         </record>
@@ -98,8 +111,7 @@
             <field name="sort">[]</field>
             <field name="domain">[]</field><!-- Aquí iría o filtro -->
             <field name="user_id"></field><!-- En blanco para que esté dispoñible para todos os usuarios -->
-            <field name="action_id"
-                   eval="ref('odoo_basico.informacion_list_action')"/><!-- Obtemos o id a partir do id externo-->
+            <field name="action_id" eval="ref('odoo_basico.informacion_list_action')"/><!-- Obtemos o id a partir do id externo-->
         </record>
 
         <record model="ir.filters" id="filtro2">

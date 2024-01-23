@@ -26,6 +26,7 @@
     'data': [
         'views/informacion.xml',
         'views/suceso.xml',
+        'views/pedido.xml',
         'views/templates.xml',
         'views/menu.xml',
         'security/ir.model.access.csv',
