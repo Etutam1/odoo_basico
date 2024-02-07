@@ -29,6 +29,7 @@
         'views/pedido.xml',
         'views/lineapedido.xml',
         'views/templates.xml',
+        'reports/report_informacion.xml',
         'views/menu.xml',
         'security/ir.model.access.csv',
     ],

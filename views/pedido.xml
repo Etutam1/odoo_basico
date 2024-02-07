@@ -1,7 +1,7 @@
 <odoo>
     <data>
         <record model="ir.actions.act_window" id="pedido_list_action">
-            <field name="name">A acción de información</field>
+            <field name="name">A acción de pedido</field>
             <field name="res_model">odoo_basico.pedido</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
@@ -14,11 +14,22 @@
             <field name="name">pedido.form</field>
             <field name="model">odoo_basico.pedido</field>
             <field name="arch" type="xml">
-                <form string="Formulario de Información">
+                <form string="Formulario de Pedido">
+                    <header>
+                        <button name="actualizadorSexo" type="object"
+                                string="Actualiza o campo Sexo do modelo información"/>
+                        <button name="creaRexistroInformacion" type="object"
+                                string="Crea un rexistro de informacion"/>
+                        <button name="actualizaRexistroInformacion" type="object"
+                                string="Actualiza un rexistro e informacion"/>
+
+                    </header>
                     <sheet>
                         <group>
                             <field name="name"/>
                         </group>
+                        <separator string="Visualizar e engadir"/>
+                        <field name="lineapedido_ids"/>
                     </sheet>
                 </form>
             </field>
@@ -30,6 +41,7 @@
             <field name="arch" type="xml">
                 <tree string="pedido tree">
                     <field name="name"/>
+                    <field name="lineapedido_ids"/>
                 </tree>
             </field>
         </record>
