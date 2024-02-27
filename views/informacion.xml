@@ -19,6 +19,11 @@
                 <form string="Formulario de Información">
                     <header>
                         <button name="envio_email" type="object" string="Enviar Email"/>
+                        <!--                        Meter boton de contexto ver en documentacion-->
+                        <button name="actualiza_hora_actual_UTC" type="object" string="Actualiza Hora Actual a UTC"/>
+                        <button name="actualiza_hora_timezone_usuario_dende_boton_e_apidepends" type="object"
+                                string="Actualiza Hora a Timezone do Usuario" class="oe_highlight"/>
+
                     </header>
                     <sheet>
                         <group>
@@ -66,7 +71,14 @@
                                 </group>
                             </page>
                             <page string="Data e Hora">
-                                <group></group>
+                                <group>
+                                    <field name="data"/>
+                                    <field name="data_hora"/>
+                                    <field name="hora_utc"/>
+                                    <field name="hora_timezone_usuario"/>
+                                    <field name="hora_actual"/>
+
+                                </group>
                             </page>
                         </notebook>
                     </sheet>
@@ -91,6 +103,11 @@
                     <field name="autorizado"/>
                     <field name="sexo_traducido"/>
                     <field name="moeda_id"/>
+                    <field name="data"/>
+                    <field name="data_hora"/>
+                    <field name="hora_utc"/>
+                    <field name="hora_timezone_usuario"/>
+                    <field name="hora_actual"/>
                 </tree>
             </field>
         </record>
@@ -114,7 +131,8 @@
             <field name="sort">[]</field>
             <field name="domain">[]</field><!-- Aquí iría o filtro -->
             <field name="user_id"></field><!-- En blanco para que esté dispoñible para todos os usuarios -->
-            <field name="action_id" eval="ref('odoo_basico.informacion_list_action')"/><!-- Obtemos o id a partir do id externo-->
+            <field name="action_id"
+                   eval="ref('odoo_basico.informacion_list_action')"/><!-- Obtemos o id a partir do id externo-->
         </record>
 
         <record model="ir.filters" id="filtro2">
