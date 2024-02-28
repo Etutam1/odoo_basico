@@ -70,14 +70,22 @@
                                     <field name="gasto_en_euros"/>
                                 </group>
                             </page>
-                            <page string="Data e Hora">
+                            <page string="Datas">
                                 <group>
-                                    <field name="data"/>
-                                    <field name="data_hora"/>
-                                    <field name="hora_utc"/>
-                                    <field name="hora_timezone_usuario"/>
-                                    <field name="hora_actual"/>
-
+                                    <group>
+                                        <field name="data"/>
+                                        <field name="data_hora"/>
+                                        <field name="hora_utc"/>
+                                        <field name="hora_timezone_usuario"/>
+                                        <field name="hora_actual"/>
+                                    </group>
+                                    <group>
+                                        <field name="data"/>
+                                        <field name="mes_castelan"/>
+                                        <field name="mes_galego"/>
+                                        <field name="mes_ingles"/>
+                                        <field name="mes_frances"/>
+                                    </group>
                                 </group>
                             </page>
                         </notebook>
@@ -108,6 +116,11 @@
                     <field name="hora_utc"/>
                     <field name="hora_timezone_usuario"/>
                     <field name="hora_actual"/>
+                    <field name="data"/>
+                    <field name="mes_castelan"/>
+                    <field name="mes_galego"/>
+                    <field name="mes_ingles"/>
+                    <field name="mes_frances"/>
                 </tree>
             </field>
         </record>

@@ -28,11 +28,13 @@
         'views/suceso.xml',
         'views/pedido.xml',
         'views/lineapedido.xml',
+        'views/persoa.xml',
         'views/templates.xml',
         'reports/report_header.xml',
         'reports/report_informacion.xml',
         'views/menu.xml',
         'security/ir.model.access.csv',
+
     ],
     # only loaded in demonstration mode
     'demo': [

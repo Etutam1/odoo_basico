@@ -22,13 +22,15 @@
                                 string="Crea un rexistro de informacion"/>
                         <button name="actualizaRexistroInformacion" type="object"
                                 string="Actualiza un rexistro e informacion"/>
-                                                 <button name="actualizadorHoraTimezone" type="object" string="Actualiza Hora Timezone do Usuario en todos os rexistros do modelo información"/>
+                        <button name="actualizadorHoraTimezone" type="object"
+                                string="Actualiza Hora Timezone do Usuario en todos os rexistros do modelo información"/>
 
 
                     </header>
                     <sheet>
                         <group>
                             <field name="name"/>
+                            <field name="persoa_id"/>
                         </group>
                         <separator string="Visualizar e engadir"/>
                         <field name="lineapedido_ids"/>
