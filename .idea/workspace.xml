@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c728579-20e9-42bc-8859-9937c175a321" name="Changes" comment="update 12/3" />
+    <list default="true" id="9c728579-20e9-42bc-8859-9937c175a321" name="Changes" comment="update 12/3">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accions_planificadas/accion_planificada.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accions_planificadas/accion_planificada.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/accion_planificada.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/accion_planificada.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/informacion.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/informacion.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,8 +68,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/a22lucasmpg/PycharmProjects/odoo_basico/security",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "last_opened_file_path": "/home/a22lucasmpg/PycharmProjects/sxe2_tpereira__lucas",
+    "settings.editor.selected.configurable": "editor.preferences.appearance"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -71,6 +79,13 @@
       <recent name="$PROJECT_DIR$/reports" />
       <recent name="$PROJECT_DIR$/static/importarImaxes" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-67fca87a943a-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.11799.259" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

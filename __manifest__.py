@@ -30,7 +30,7 @@
         'views/lineapedido.xml',
         'views/persoa.xml',
         'views/templates.xml',
-        'reports/report_header.xml',
+        # 'reports/report_header.xml',
         'reports/report_informacion.xml',
         'accions_planificadas/accion_planificada.xml',
         'security/xestion_usuarios.xml',

@@ -93,7 +93,8 @@ class informacion(models.Model):
             'email_from': mail_reply_to,
             'email_to': mail_para,
             'message_type': 'email',
-            'body_html': 'Datos %s: \n Sexo: %s, Altura: %s' % (self.name, self.sexo_traducido, self.alto_en_cms)
+            'body_html': 'Datos %s: '
+            '<br/> Sexo: %s, Altura: %s, Moneda: %s' % (self.name, self.sexo_traducido, self.alto_en_cms, self.moeda_id.name)
         }
         mail_id = self.env['mail.mail'].create(mail_valores)
         mail_id.sudo().send()

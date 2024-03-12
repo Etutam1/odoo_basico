@@ -16,7 +16,10 @@ class accion_planificada (models.Model):
             listado = ""
             for rexistro in facturas_ids:
                 #listado = listado + "<br/>" + str(rexistro.number) + "-> " + str(rexistro.partner_id.display_name) + "-> " + str(rexistro.amount_total) Version Odoo 12
-                listado = listado + "<br/>" + str(rexistro.name) + "-> " + str(rexistro.partner_id.display_name) + "-> " + str(rexistro.amount_residual)
+                listado = (listado + "<br/>" + str(rexistro.name) + "-> " + "Fecha: " + str(rexistro.invoice_date) +
+                           "<br/>" + "Cliente: "+str(rexistro.partner_id.display_name) +
+                           "<br/>" + "Comercial: "+str(rexistro.invoice_user_id.display_name) +
+                           "<br/>" + "Total: "+str(rexistro.amount_residual))
             # mail_de     Odoo pon o email que configuramos en gmail para facer o envio
 
             mail_reply_to = usuario_que_executa_o_metodo_que_e_o_definido_no_xml.partner_id.email  # odoobot@example.com
@@ -27,7 +30,7 @@ class accion_planificada (models.Model):
                     'email_from': mail_reply_to,
                     'email_to': mail_para,
                     'message_type': 'email',
-                    'body_html': "Neste momento %s existen as seguintes facturas: %s" % (agora,str(listado)),
+                    'body_html': "Lista de facturas as %s %s" % (agora, str(listado)),
                 }
             mail_id = self.env['mail.mail'].create(mail_valores)
             mail_id.send()

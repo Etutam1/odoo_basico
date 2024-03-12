@@ -10,7 +10,7 @@
             <field name="numbercall">-1</field> <!--  An integer value specifying how many times the job is executed. A negative value means no limit.-->
             <!--<field name="function">True</field>Odoo Version 12 -->
             <!--<field name="model_id" ref="model_account_invoice" />  Odoo Version 12 -->
-            <field name="model_id" ref="account.model_account_move" />  <!-- Odoo Version 13 -->
+            <field name="model_id" ref="model_account_move" />  <!-- Odoo Version 13 -->
             <field name="state">code</field>
             <field name="code">model.listado_facturas()</field>
             <field name="doall" eval="False" /> <!--      A boolean value indicating whether missed occurrences should be executed when the server restarts-->
