@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c728579-20e9-42bc-8859-9937c175a321" name="Changes" comment="update 7/2">
-      <change afterPath="$PROJECT_DIR$/models/miñasUtilidades.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/persoa.py" afterDir="false" />
+    <list default="true" id="9c728579-20e9-42bc-8859-9937c175a321" name="Changes" comment="update 28/2">
+      <change afterPath="$PROJECT_DIR$/security/ir.model.accessVersionBasica.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/ir.model.accessVersionXestionUsuarios.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/security/xestion_usuarios.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__manifest__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/informacion.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/informacion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/pedido.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/pedido.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/report_informacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/reports/report_informacion.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/security/ir.model.access.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/informacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/views/informacion.xml" afterDir="false" />
     </list>
@@ -29,6 +31,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Etutam1&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="253f024f-6c2d-4831-ab8e-05309daafc3f" />
+        <option name="url" value="https://github.com/Etutam1/odoo_basico2.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/accions_planificadas/accion_planificada.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/models/__init__.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/models/informacion.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/models/pedido.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/models/persoa.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/security/ir.model.access.csv" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/views/informacion.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/views/pedido.xml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/views/persoa.xml" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -44,12 +71,14 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/home/a22lucasmpg/Escritorio/punzongarcia",
+    "last_opened_file_path": "/home/a22lucasmpg/PycharmProjects/odoo_basico/security",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/security" />
+      <recent name="$PROJECT_DIR$/models" />
       <recent name="$PROJECT_DIR$/reports" />
       <recent name="$PROJECT_DIR$/static/importarImaxes" />
     </key>
@@ -79,12 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1707312124380</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update 28/2">
+      <option name="closed" value="true" />
+      <created>1709126120450</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709126120450</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update 23/1" />
     <MESSAGE value="update 7/2" />
-    <option name="LAST_COMMIT_MESSAGE" value="update 7/2" />
+    <MESSAGE value="update 28/2" />
+    <option name="LAST_COMMIT_MESSAGE" value="update 28/2" />
   </component>
 </project>

@@ -45,13 +45,13 @@
                             <thead>
                                 <tr class="bg-primary">
                                     <th class="text-left">Titulo(name)</th>
-                                    <th class="text-left">Peso</th>
-                                    <th class="text-left">Autorizado</th>
+                                    <th class="text-left">Altura</th>
+                                    <th class="text-left">Moeda</th>
                                     <th class="text-left">Sexo</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <t t-set="suma_peso" t-value="0"/>
+                                <t t-set="total_homes" t-value="0"/>
                                 <t t-foreach="docs" t-as="o">
                                     <tr>
                                         <td class="text-left">
@@ -60,38 +60,37 @@
                                             </h5>
                                         </td>
                                         <td class="text-left">
-                                            <span t-field="o.peso"/>
-                                            <t t-if="o.peso > 3">
-                                                <t t-set="suma_peso" t-value="suma_peso + o.peso"/>
-                                            </t>
+                                            <span t-field="o.alto_en_cms"/>
                                         </td>
                                         <td class="text-left">
-                                            <t t-if="o.autorizado == True">
-                                                <span>SI</span>
-                                            </t>
-                                            <t t-else="">
-                                                <span>NON</span>
-                                            </t>
+                                            <span t-field="o.moeda_en_texto"/>
                                         </td>
                                         <td class="text-left">
                                             <h5>
                                                 <span t-field="o.sexo_traducido"/>
+                                                <t t-if="o.sexo_traducido == 'Hombre'">
+                                                    <t t-set="total_homes" t-value="total_homes + 1"/>
+                                                </t>
                                             </h5>
                                         </td>
                                     </tr>
                                 </t>
-                                <td class="text-left">
-                                    <span>Suma de pesos maior a 3</span>
-                                </td>
-                                <td class="text-left">
-                                    <span t-esc="suma_peso"/>
-                                </td>
-                                <td class="text-left">
-                                    <span>Total Pesos:</span>
-                                </td>
-                                <td class="text-left">
-                                    <span t-esc="sum([x.peso for x in docs])"/>
-                                </td>
+                                <tr>
+                                    <td colspan="3" class="text-left">
+                                        <span>TOTAL DE HOMES</span>
+                                    </td>
+                                    <td class="text-left">
+                                        <span t-esc="total_homes"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="text-left">
+                                        <span>TOTAL ALTURAS:</span>
+                                    </td>
+                                    <td class="text-left">
+                                        <span t-esc="sum([x.alto_en_cms for x in docs])"/>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>

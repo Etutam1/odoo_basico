@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base'],
+    'depends': ['base', 'account'],
 
     # always loaded
     'data': [
@@ -32,6 +32,8 @@
         'views/templates.xml',
         'reports/report_header.xml',
         'reports/report_informacion.xml',
+        'accions_planificadas/accion_planificada.xml',
+        'security/xestion_usuarios.xml',
         'views/menu.xml',
         'security/ir.model.access.csv',
 

@@ -1,8 +1,11 @@
+import os
+
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 from odoo.tools.safe_eval import pytz
 import locale
 from . import miñasUtilidades
+from odoo.exceptions import Warning
 
 class informacion(models.Model):
     _name = 'odoo_basico.informacion'
@@ -83,14 +86,14 @@ class informacion(models.Model):
         meu_usuario = self.env.user
         # mail_de     Odoo pon o email que configuramos en gmail para facer o envio
         mail_reply_to = meu_usuario.partner_id.email  # o enderezo email que ten asociado o noso usuario
-        mail_para = 'lucasmpg@proton.me'  # o enderezo email de destino
+        mail_para = 'etutamc@gmail.com'  # o enderezo email de destino
         mail_valores = {
-            'subject': 'Aquí iría o asunto do email ',
+            'subject': 'Correo para "%s"' %self.name,
             'author_id': meu_usuario.id,
             'email_from': mail_reply_to,
             'email_to': mail_para,
             'message_type': 'email',
-            'body_html': 'Aquí iría o corpo do email cos datos por exemplo de "%s" ' % self.descripcion,
+            'body_html': 'Datos %s: \n Sexo: %s, Altura: %s' % (self.name, self.sexo_traducido, self.alto_en_cms)
         }
         mail_id = self.env['mail.mail'].create(mail_valores)
         mail_id.sudo().send()
@@ -183,3 +186,11 @@ class informacion(models.Model):
             rexistro.mes_frances = rexistro.data.strftime("%B")
         locale.setlocale(locale.LC_TIME, miñasUtilidades.cadeaTextoSegunPlataforma('french_france', 'fr_FR.utf8'))
 
+    def ver_contexto(self):  # Este método é chamado dende un botón de informacion.xml
+        for rexistro in self:
+            # Ao usar warning temos que importar a libreria mediante from odoo.exceptions import Warning
+            # Importamos tamén a libreria os mediante import os
+            raise ValidationError(
+                'Contexto: %s Ruta: %s Contido %s' % (rexistro.env.context, os.getcwd(), os.listdir(os.getcwd())))
+            # env.context é un diccionario  https://www.w3schools.com/python/python_dictionaries.asp
+        return True

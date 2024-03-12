@@ -23,7 +23,7 @@
                         <button name="actualiza_hora_actual_UTC" type="object" string="Actualiza Hora Actual a UTC"/>
                         <button name="actualiza_hora_timezone_usuario_dende_boton_e_apidepends" type="object"
                                 string="Actualiza Hora a Timezone do Usuario" class="oe_highlight"/>
-
+                        <button name="ver_contexto" type="object" string="Ver Contexto"/>
                     </header>
                     <sheet>
                         <group>
